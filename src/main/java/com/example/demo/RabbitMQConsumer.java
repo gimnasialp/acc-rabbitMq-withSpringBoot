@@ -16,7 +16,7 @@ public class RabbitMQConsumer {
 		System.out.println(p.getName());
 	}
 	
-/*	@RabbitListener(queues = "Mobile")
+	@RabbitListener(queues = "Mobile")
 	public void getMessage(byte[] message) throws IOException, ClassNotFoundException {
 		ByteArrayInputStream bis = new ByteArrayInputStream(message);
 		ObjectInput in = new ObjectInputStream(bis);
@@ -24,5 +24,5 @@ public class RabbitMQConsumer {
 		in.close();
 		bis.close();
 		System.out.println(p.getName());
-	}*/
+	}
 }
